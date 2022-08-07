@@ -1,0 +1,49 @@
+/* ABSOLUTE UNITS */
+
+/* All absolute lengths resolve against the same base, making them predictable wherever they're used in your CSS. For example, if you use cm to size your element and then print, it should be accurate if you compared it to a ruler. Absolute lengths useful for print. Absolute units are not responsive.  */
+
+.cm {
+    font-size: 1cm;
+}
+
+.mm {
+    font-size: 100mm;
+}
+
+.inches {
+    font-size: 1in;
+}
+
+.px {
+    font-size: 300px;
+}
+
+/* RELATIVE UNITS */
+
+/* A relative length is calculated against a base value, much like a percentage. The difference between these and percentages is that you can contextually size elements. This means that CSS has units such as ch that use the text size as a basis, and vw which is based on the width of the viewport (your browser window). Relative lengths are particularly useful on the web due to its responsive nature. */
+
+.em {
+    font-size: 5em;
+}
+
+.rem {
+    font-size: 5rem;
+}
+
+.vw {
+    font-size: 80vw;
+    /* 1% of viewport's width. People use this unit to do cool font tricks, like resizing a header font based on the width of the page so as the user resizes, the font will also resize. */
+}
+
+.vh {
+    font-size: 100vh;
+}
+
+.width h1 {
+    width:20%;
+    /* % calculated as a percentage of the available width in the parent element. */
+}
+
+.width, h1 {
+    border:1px solid black;
+}
